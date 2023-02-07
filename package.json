@@ -2,9 +2,9 @@
   "name": "unplugin-theme-atomic-css",
   "version": "1.0.0",
   "description": "remove style tag content from vue file. 从vue文件中删除style标签内容。",
-  "main": "index.js",
   "scripts": {
     "prepare": "husky install",
+    "build": "rollup index.esm.js --file index.cjs.js --format cjs",
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "unplugin",
+    "theme",
     "atomic",
     "css",
     "unocss",
@@ -23,7 +24,8 @@
     "tailwind",
     "twind",
     "element-plus",
-    "naive-ui"
+    "naive-ui",
+    "unplugin-theme-atomic-css"
   ],
   "author": "gimjin",
   "license": "MIT",
@@ -36,8 +38,15 @@
     "npm": ">=8"
   },
   "files": [
-    "index.js"
+    "index.esm.js",
+    "index.cjs.js"
   ],
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.cjs.js"
+    }
+  },
   "dependencies": {
     "chalk": "^5.2.0",
     "unplugin": "^1.0.1"
@@ -52,6 +61,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",
+    "rollup": "^3.14.0",
     "standard-version": "^9.5.0"
   }
 }
