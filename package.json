@@ -1,0 +1,57 @@
+{
+  "name": "unplugin-theme-atomic-css",
+  "version": "1.0.0",
+  "description": "remove style tag content from vue file. 从vue文件中删除style标签内容。",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch",
+    "publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimjin/unplugin-theme-atomic-css.git"
+  },
+  "keywords": [
+    "unplugin",
+    "atomic",
+    "css",
+    "unocss",
+    "windi",
+    "tailwind",
+    "twind",
+    "element-plus",
+    "naive-ui"
+  ],
+  "author": "gimjin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gimjin/unplugin-theme-atomic-css/issues"
+  },
+  "homepage": "https://github.com/gimjin/unplugin-theme-atomic-css#readme",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "unplugin": "^1.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "eslint": "^8.33.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "standard-version": "^9.5.0"
+  }
+}
