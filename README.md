@@ -9,18 +9,18 @@ Ignore if developing a library.
 
 ### install
 ```bash
-npm i unplugin-theme-atomic-css -D
+npm i unplugin-remove-vue-style -D
 ```
 
 ### Configuration
 ##### Vite
 ```javascript
 // vite.config.ts
-import { vitePluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
+import { vitePluginRemoveVueStyle } from 'unplugin-remove-vue-style'
 
 export default defineConfig({
   plugins: [
-    vitePluginThemeAtomicCSS(),
+    vitePluginRemoveVueStyle(),
     /* ... */
   ]
 })
@@ -28,11 +28,11 @@ export default defineConfig({
 ##### Rollup
 ```javascript
 // rollup.config.js
-import { rollupPluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
+import { rollupPluginRemoveVueStyle } from 'unplugin-remove-vue-style'
 
 export default {
   plugins: [
-    rollupPluginThemeAtomicCSS(),
+    rollupPluginRemoveVueStyle(),
     /* ... */
   ]
 }
@@ -41,11 +41,11 @@ export default {
 ##### Webpack
 ```javascript
 // webpack.config.js
-import { webpackPluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
+import { webpackPluginRemoveVueStyle } from 'unplugin-remove-vue-style'
 
 module.exports = {
   plugins: [
-    webpackPluginThemeAtomicCSS(),
+    webpackPluginRemoveVueStyle(),
     /* ... */
   ]
 }
@@ -55,11 +55,11 @@ module.exports = {
 ```javascript
 // esbuild.config.js
 import { build } from 'esbuild'
-import { esbuildPluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
+import { esbuildPluginRemoveVueStyle } from 'unplugin-remove-vue-style'
 
 build({
   plugins: [
-    esbuildPluginThemeAtomicCSS(),
+    esbuildPluginRemoveVueStyle(),
     /* ... */
   ]
 })

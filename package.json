@@ -1,6 +1,6 @@
 {
-  "name": "unplugin-theme-atomic-css",
-  "version": "1.0.2",
+  "name": "unplugin-remove-vue-style",
+  "version": "1.0.0",
   "description": "remove style tag content from vue file. 从vue文件中删除style标签内容。",
   "scripts": {
     "prepare": "husky install",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gimjin/unplugin-theme-atomic-css.git"
+    "url": "git+https://github.com/gimjin/unplugin-remove-vue-style.git"
   },
   "keywords": [
     "unplugin",
@@ -25,14 +25,14 @@
     "twind",
     "element-plus",
     "naive-ui",
-    "unplugin-theme-atomic-css"
+    "unplugin-remove-vue-style"
   ],
   "author": "gimjin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gimjin/unplugin-theme-atomic-css/issues"
+    "url": "https://github.com/gimjin/unplugin-remove-vue-style/issues"
   },
-  "homepage": "https://github.com/gimjin/unplugin-theme-atomic-css#readme",
+  "homepage": "https://github.com/gimjin/unplugin-remove-vue-style#readme",
   "engines": {
     "node": ">=16",
     "npm": ">=8"

@@ -3,7 +3,7 @@ import chalk from 'chalk'
 
 export const unplugin = createUnplugin(() => {
   return {
-    name: 'unplugin-theme-atomic-css',
+    name: 'unplugin-remove-vue-style',
     transformInclude (id) {
       return id.endsWith('.vue')
     },
@@ -14,7 +14,7 @@ export const unplugin = createUnplugin(() => {
       if (stylePattern.test(code)) {
         console.info(warning('[plugin-theme-atomic-css]'), 'Removed the style tag from the *.vue file')
         console.info(warning('[plugin-theme-atomic-css]'), 'Please use theme(ElementPlus Theme/NaiveUI Theme/...) and atomic CSS(unocss/Windi CSS/...)')
-        console.info(warning('[plugin-theme-atomic-css]'), 'more https://github.com/gimjin/unplugin-theme-atomic-css#readme')
+        console.info(warning('[plugin-theme-atomic-css]'), 'more https://github.com/gimjin/unplugin-remove-vue-style#readme')
       }
 
       return code.replace(stylePattern, '')
@@ -22,7 +22,7 @@ export const unplugin = createUnplugin(() => {
   }
 })
 
-export const vitePluginThemeAtomicCSS = unplugin.vite
-export const rollupPluginThemeAtomicCSS = unplugin.rollup
-export const webpackPluginThemeAtomicCSS = unplugin.webpack
-export const esbuildPluginThemeAtomicCSS = unplugin.esbuild
+export const vitePluginRemoveVueStyle = unplugin.vite
+export const rollupPluginRemoveVueStyle = unplugin.rollup
+export const webpackPluginRemoveVueStyle = unplugin.webpack
+export const esbuildPluginRemoveVueStyle = unplugin.esbuild
