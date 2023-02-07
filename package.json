@@ -4,7 +4,7 @@
   "description": "remove style tag content from vue file. 从vue文件中删除style标签内容。",
   "scripts": {
     "prepare": "husky install",
-    "build": "rollup index.esm.js --file index.cjs.js --format cjs",
+    "build": "rollup index.mjs --file index.js --format cjs",
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
@@ -38,15 +38,18 @@
     "npm": ">=8"
   },
   "files": [
-    "index.esm.js",
-    "index.cjs.js"
+    "index.js",
+    "index.mjs"
   ],
   "exports": {
     ".": {
-      "import": "./index.esm.js",
-      "require": "./index.cjs.js"
-    }
+      "require": "./index.js",
+      "import": "./index.mjs"
+    },
+    "./*": "./*"
   },
+  "main": "./index.js",
+  "module": "./index.mjs",
   "dependencies": {
     "chalk": "^5.2.0",
     "unplugin": "^1.0.1"
