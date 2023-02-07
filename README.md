@@ -20,7 +20,8 @@ import { vitePluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
 
 export default defineConfig({
   plugins: [
-    vitePluginThemeAtomicCSS()
+    vitePluginThemeAtomicCSS(),
+    /* ... */
   ]
 })
 ```
@@ -31,7 +32,8 @@ import { rollupPluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
 
 export default {
   plugins: [
-    rollupPluginThemeAtomicCSS()
+    rollupPluginThemeAtomicCSS(),
+    /* ... */
   ]
 }
 ```
@@ -43,7 +45,8 @@ import { webpackPluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
 
 module.exports = {
   plugins: [
-    webpackPluginThemeAtomicCSS()
+    webpackPluginThemeAtomicCSS(),
+    /* ... */
   ]
 }
 ```
@@ -56,7 +59,8 @@ import { esbuildPluginThemeAtomicCSS } from 'unplugin-theme-atomic-css'
 
 build({
   plugins: [
-    esbuildPluginThemeAtomicCSS()
+    esbuildPluginThemeAtomicCSS(),
+    /* ... */
   ]
 })
 ```
