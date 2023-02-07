@@ -1,6 +1,6 @@
 {
   "name": "unplugin-theme-atomic-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "remove style tag content from vue file. 从vue文件中删除style标签内容。",
   "scripts": {
     "prepare": "husky install",
